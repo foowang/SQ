@@ -1,0 +1,360 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.1 Nodejs简介及安装 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="GitBookInstall.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    GitBook入门教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1. 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1" data-path="NodejsInstall.html">
+            
+                <a href="NodejsInstall.html">
+            
+                    
+                    1.1 Nodejs简介及安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="GitBookInstall.html">
+            
+                <a href="GitBookInstall.html">
+            
+                    
+                    1.2 GitBook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../use/use.html">
+            
+                <a href="../use/use.html">
+            
+                    
+                    2. 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.1 Nodejs简介及安装</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="nodejs&#x7B80;&#x4ECB;&#x53CA;&#x5B89;&#x88C5;">Node.js&#x7B80;&#x4ECB;&#x53CA;&#x5B89;&#x88C5;</h2>
+<p><strong>&#x5B89;&#x88C5;gitbook&#x524D;&#x5FC5;&#x987B;&#x5148;&#x5B89;&#x88C5;node&#x3002;</strong></p>
+<p>&#x4EC0;&#x4E48;&#x662F;nodejs?</p>
+<blockquote>
+<p>Node.js &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Chrome V8 &#x5F15;&#x64CE;&#x7684; JavaScript &#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002; 
+Node.js &#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x3001;&#x975E;&#x963B;&#x585E;&#x5F0F; I/O &#x7684;&#x6A21;&#x578B;&#xFF0C;&#x4F7F;&#x5176;&#x8F7B;&#x91CF;&#x53C8;&#x9AD8;&#x6548;&#x3002; 
+Node.js &#x7684;&#x5305;&#x7BA1;&#x7406;&#x5668; npm&#xFF0C;&#x662F;&#x5168;&#x7403;&#x6700;&#x5927;&#x7684;&#x5F00;&#x6E90;&#x5E93;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x3002;</p>
+</blockquote>
+<p>&#x811A;&#x672C;&#x8BED;&#x8A00;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#xFF0C;JavaScript&#x662F;&#x811A;&#x672C;&#x8BED;&#x8A00;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#x6709;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x5982;&#x5199;&#x5165;html&#x7684;js&#x8BED;&#x8A00;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x5B83;&#x7684;&#x89E3;&#x6790;&#x5668;&#x89D2;&#x8272;&#x3002;&#x800C;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;JS&#xFF0C;nodejs&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x79CD;&#x89E3;&#x6790;&#x5668;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#xFF0C;&#x4E0D;&#x4F46;&#x5141;&#x8BB8;js&#x5B9A;&#x4E49;&#x5404;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x8BA1;&#x7B97;&#xFF0C;&#x8FD8;&#x5141;&#x8BB8;js&#x4F7F;&#x7528;&#x5141;&#x8BB8;&#x73AF;&#x5883;&#x63D0;&#x4F9B;&#x7684;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x548C;&#x65B9;&#x6CD5;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x3002;&#x5982;&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;js&#x7684;&#x7528;&#x9014;&#x662F;&#x64CD;&#x4F5C;DOM&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5C31;&#x63D0;&#x4F9B;&#x4E86;document&#x4E4B;&#x7C7B;&#x7684;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x3002;&#x800C;&#x8FD0;&#x884C;&#x5728;nodejs&#x4E2D;&#x7684;js&#x7684;&#x7528;&#x9014;&#x662F;&#x64CD;&#x4F5C;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x6216;&#x642D;&#x5EFA;http&#x670D;&#x52A1;&#x5668;&#xFF0C;nodejs&#x5C31;&#x76F8;&#x5E94;&#x63D0;&#x4F9B;&#x4E86;fs,http&#x7B49;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;">&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x4F60;&#x7CFB;&#x7EDF;&#x7684;Node.js&#x7248;&#x672C;&#xFF1A;<a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a></li>
+<li>&#x9009;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x8FDB;&#x884C;&#x5B89;&#x88C5;</li>
+<li>&#x73AF;&#x5883;&#x914D;&#x7F6E;</li>
+<li>&#x6D4B;&#x8BD5;</li>
+<li>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</li>
+</ol>
+<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
+<p>1&#x3001;2&#x4E24;&#x6B65;&#x5728;&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x4E4B;&#x540E;&#x76F4;&#x63A5;&#x4E0B;&#x4E00;&#x6B65;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#xFF0C;&#x5EFA;&#x8BAE;&#x52FE;&#x4E0A;
+<img src="images/GitBook1.1.0.png" alt="&#x9ED8;&#x8BA4;Add to PATH"></p>
+<p>&#x5F53;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6253;&#x5F00;CMD&#x7A97;&#x53E3;&#x8FDB;&#x884C;&#x7B80;&#x5355;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;
+<img src="images/GitBook1.1.1.png" alt="nodejs&#x7248;&#x672C;&#xFF0C;npm&#x7248;&#x672C;"></p>
+<p>&#x5F53;&#x73B0;&#x5B9E;&#x4E0A;&#x9762;&#x7A97;&#x53E3;&#x5373;&#x8868;&#x660E;nodejs&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF0C;&#x56E0;&#x4E3A;&#x5B89;&#x88C5;&#x7684;&#x662F;&#x65B0;&#x7248;nodejs&#xFF0C;npm&#x4E5F;&#x4F1A;&#x4E00;&#x8D77;&#x5B89;&#x88C5;&#x3002;</p>
+<h4 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x73AF;&#x5883;&#x914D;&#x7F6E;</h4>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x4E3B;&#x8981;&#x914D;&#x7F6E;&#x7684;&#x662F;npm&#x5B89;&#x88C5;&#x7684;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x6240;&#x5728;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x4EE5;&#x53CA;&#x7F13;&#x5B58;cache&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x8981;&#x914D;&#x7F6E;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x4EE5;&#x540E;&#x5728;&#x6267;&#x884C;&#x7C7B;&#x4F3C;&#xFF1A;npm install express [-g] &#xFF08;&#x540E;&#x9762;&#x7684;&#x53EF;&#x9009;&#x53C2;&#x6570;-g&#xFF0C;g&#x4EE3;&#x8868;global&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x610F;&#x601D;&#xFF09;&#x7684;&#x5B89;&#x88C5;&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x5B89;&#x88C5;&#x7684;&#x6A21;&#x5757;&#x5B89;&#x88C5;&#x5230;&#x3010;C:\Users\&#x7528;&#x6237;&#x540D;\AppData\Roaming\npm&#x3011;&#x8DEF;&#x5F84;&#x4E2D;&#xFF0C;&#x5360;C&#x76D8;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x6211;&#x5E0C;&#x671B;&#x5C06;&#x5168;&#x6A21;&#x5757;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#x548C;&#x7F13;&#x5B58;&#x8DEF;&#x5F84;&#x653E;&#x5728;&#x6211;node.js&#x5B89;&#x88C5;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5219;&#x5728;&#x6211;&#x5B89;&#x88C5;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3010;D:\SQ\node\nodejs&#x3011;&#x4E0B;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x3010;node_global&#x3011;&#x53CA;&#x3010;node_cache&#x3011;</p>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x4E24;&#x4E2A;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x4E4B;&#x540E;&#xFF0C;&#x6253;&#x5F00;cmd&#x547D;&#x4EE4;&#x7A97;&#x53E3;&#xFF0C;&#x8F93;&#x5165;</p>
+<pre><code>npm config set prefix &quot;D:\SQ\node\nodejs\node_global&quot;
+npm config set cache &quot;D:\SQ\node\nodejs\node_cache&quot;
+</code></pre><p>&#x5F53;&#x4E0D;&#x60F3;&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x8BBE;&#x7F6E;&#xFF0C;&#x53EA;&#x9700;&#x5220;&#x9664;.npmrc&#x6587;&#x4EF6;&#x5373;&#x53EF;(&#x9ED8;&#x8BA4;&#x5728;&#x7528;&#x6237;&#x6839;&#x76EE;&#x5F55;&#x4E0B;)</p>
+<p>&#x8FDB;&#x5165;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x5728;<strong>&#x3010;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x3011;</strong>&#x4E0B;&#x65B0;&#x5EFA;&#x3010;NODE_PATH&#x3011;&#xFF0C;&#x8F93;&#x5165;&#x3010;D:\SQ\node\nodejs\node_global\node_modules&#x3011;&#xFF0C;&#x5C06;<strong>&#x3010;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x3011;</strong>&#x4E0B;&#x7684;&#x3010;Path&#x3011;&#x4FEE;&#x6539;&#x4E3A;&#x3010;D:\SQ\node\nodejs\node_global&#x3011;</p>
+<h4 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h4>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x540E;&#xFF0C;&#x5B89;&#x88C5;&#x4E2A;module&#x6D4B;&#x8BD5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5B89;&#x88C5;&#x6700;&#x5E38;&#x7528;&#x7684;express&#x6A21;&#x5757;&#xFF0C;&#x6253;&#x5F00;cmd&#x7A97;&#x53E3;&#xFF0C;
+&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x6A21;&#x5757;&#x7684;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code>npm install express -g     # -g&#x662F;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x610F;&#x601D;
+</code></pre><h4 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<h5 id="&#x66F4;&#x6539;&#x6CE8;&#x518C;&#x8868;&#x6E90;">&#x66F4;&#x6539;&#x6CE8;&#x518C;&#x8868;&#x6E90;</h5>
+<p>&#x56FD;&#x5185;&#x7528;&#x6237;&#x5728;npm&#x4E0A;&#x7ECF;&#x5E38;&#x5B89;&#x88C5;&#x4E0D;&#x4E0A;&#x5305;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x539F;&#x56E0;&#x662F;&#x88AB;wall&#x4E86;&#xFF0C;&#x5BFC;&#x81F4;&#x6839;&#x672C;&#x6CA1;&#x6CD5;&#x4F7F;&#x7528;&#x3002;&#x800C;&#x6DD8;&#x5B9D;&#x56E2;&#x961F;&#x7ED9;&#x51FA;&#x4E86;<a href="https://npm.taobao.org/" target="_blank">npm&#x955C;&#x50CF;</a>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;npm&#x7684;&#x6CE8;&#x518C;&#x8868;&#x6E90;&#x6539;&#x4E3A;&#x6B64;&#x955C;&#x50CF;&#x89E3;&#x51B3;npm&#x4E2D;&#x5305;&#x65E0;&#x6CD5;install&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>1.&#x4E34;&#x65F6;&#x4F7F;&#x7528;&#xFF1A;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x5305;&#x65F6;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;</p>
+<pre><code>$ npm --registry https://registry.npm.taobao.org install [packagename]
+</code></pre><p>&#x5C06;[packagename]&#x6539;&#x4E3A;&#x60F3;&#x8981;&#x5B89;&#x88C5;&#x7684;&#x5305;&#x7684;&#x540D;&#x5B57;&#x5373;&#x53EF;&#x3002; </p>
+<p>2.&#x6C38;&#x4E45;&#x4F7F;&#x7528;</p>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+
+// &#x914D;&#x7F6E;&#x540E;&#x53EF;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x65B9;&#x5F0F;&#x6765;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F; 
+
+npm config get registry
+</code></pre><p>&#x5B89;&#x88C5;&#x7684;&#x5305;&#x7684;&#x4F9D;&#x8D56;&#x662F;&#x5426;&#x6709;&#x65E0;&#x6CD5;&#x4E0B;&#x8F7D;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x4E0D;&#x592A;&#x597D;&#x5224;&#x65AD;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;npm install&#x547D;&#x4EE4;&#x540E;&#x52A0;&#x4E00;&#x4E2A;-d&#x6216;--verbose&#x6765;&#x663E;&#x793A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x662F;&#x5B89;&#x88C5;&#x7684;&#x54EA;&#x4E00;&#x6B65;&#x9664;&#x4E86;&#x95EE;&#x9898;&#x3002; </p>
+<pre><code>$ npm install webpack -g -d&#x6216;$ npm install webpack -g --verbose
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 1. 安装">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="GitBookInstall.html" class="navigation navigation-next " aria-label="Next page: 1.2 GitBook安装">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.1 Nodejs简介及安装","level":"1.2.1.1","depth":3,"next":{"title":"1.2 GitBook安装","level":"1.2.1.2","depth":3,"path":"gitbook/install/GitBookInstall.md","ref":"gitbook/install/GitBookInstall.md","articles":[]},"previous":{"title":"1. 安装","level":"1.2.1","depth":2,"path":"gitbook/install/README.md","ref":"gitbook/install/README.md","articles":[{"title":"1.1 Nodejs简介及安装","level":"1.2.1.1","depth":3,"path":"gitbook/install/NodejsInstall.md","ref":"gitbook/install/NodejsInstall.md","articles":[]},{"title":"1.2 GitBook安装","level":"1.2.1.2","depth":3,"path":"gitbook/install/GitBookInstall.md","ref":"gitbook/install/GitBookInstall.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gitbook/install/NodejsInstall.md","mtime":"2018-03-24T16:38:44.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-27T11:58:05.298Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook.js"></script>
+    <script src="../theme.js"></script>
+    
+        
+        <script src="../gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
